@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var sliderView: SliderView!
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
         
         sliderView.reloadData()
         
-        
+        sliderView.sliderViewSelectAtIndex(3)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -38,10 +39,9 @@ class ViewController: UIViewController {
 }
 
 extension ViewController:SliderViewDelegate {
-    func sliderViewDidSelect(didSelectAt index: Int,
-                                         item: SliderMarkItem?)
+    func sliderViewDidSelect(didSelectAt index: Int)
     {
-        
+        print("Did Select : \(index)")
     }
 }
 
@@ -52,30 +52,39 @@ extension ViewController:SliderViewDataSource {
     }
     
     func sliderViewNumberMark() -> Int{
-        return 4
+        return 5
     }
-    func sliderViewNeedShowTopBottom() -> Bool{
-        return false
-    }
-    
+
     func sliderViewSizeForMark() -> CGSize {
         return CGSizeMake(15, 15)
     }
     
-    func sliderViewMarkViewAtIndex(index: Int) -> SliderMarkItem?
-    {
-        return nil
-    }
-    
-    func sliderViewColorForMarkHightLight() -> UIColor{
-        return UIColor.greenColor()
-    }
-    func sliderViewColorForMarkNormal() -> UIColor{
-        return UIColor.redColor()
+    func sliderViewMarkViewAtIndex(index: Int) -> SliderMarkView? {
+        let view = NSBundle.mainBundle().loadNibNamed("SurveyMarkView", owner: nil, options: nil).first as! SurveyMarkView
+        var frame = view.frame
+        frame.size.height = sliderView.bounds.height
+        view.frame = frame
+        
+        switch index {
+        case 0:
+            view.lblInfo.text = "Kém"
+        case 1:
+            view.lblInfo.text = "Trung bình"
+        case 2:
+            view.lblInfo.text = "Tốt"
+        case 3:
+            view.lblInfo.text = "Khá"
+        case 4:
+            view.lblInfo.text = "Rất tốt"
+        default:
+            break
+        }
+        
+        return view
     }
     
     func sliderViewHeightForTrack() -> CGFloat {
-        return 8
+        return 5
     }
     
     func sliderViewColorForMinimum() -> UIColor {

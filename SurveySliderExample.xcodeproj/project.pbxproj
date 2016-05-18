@@ -15,6 +15,8 @@
 		CF5054C21CEAF7160006A2F5 /* SurveySliderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5054C11CEAF7160006A2F5 /* SurveySliderExampleTests.swift */; };
 		CF5054CD1CEAF7160006A2F5 /* SurveySliderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5054CC1CEAF7160006A2F5 /* SurveySliderExampleUITests.swift */; };
 		CF5054DB1CEAF73A0006A2F5 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5054DA1CEAF73A0006A2F5 /* SliderView.swift */; };
+		CF5054DD1CEC1F3D0006A2F5 /* SurveyMarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5054DC1CEC1F3D0006A2F5 /* SurveyMarkView.xib */; };
+		CF5054DF1CEC1F480006A2F5 /* SurveyMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5054DE1CEC1F480006A2F5 /* SurveyMarkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CF5054CC1CEAF7160006A2F5 /* SurveySliderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveySliderExampleUITests.swift; sourceTree = "<group>"; };
 		CF5054CE1CEAF7160006A2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5054DA1CEAF73A0006A2F5 /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		CF5054DC1CEC1F3D0006A2F5 /* SurveyMarkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyMarkView.xib; sourceTree = "<group>"; };
+		CF5054DE1CEC1F480006A2F5 /* SurveyMarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyMarkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				CF5054B51CEAF7160006A2F5 /* LaunchScreen.storyboard */,
 				CF5054B81CEAF7160006A2F5 /* Info.plist */,
 				CF5054DA1CEAF73A0006A2F5 /* SliderView.swift */,
+				CF5054DC1CEC1F3D0006A2F5 /* SurveyMarkView.xib */,
+				CF5054DE1CEC1F480006A2F5 /* SurveyMarkView.swift */,
 			);
 			path = SurveySliderExample;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				CF5054B71CEAF7160006A2F5 /* LaunchScreen.storyboard in Resources */,
 				CF5054B41CEAF7160006A2F5 /* Assets.xcassets in Resources */,
 				CF5054B21CEAF7160006A2F5 /* Main.storyboard in Resources */,
+				CF5054DD1CEC1F3D0006A2F5 /* SurveyMarkView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 				CF5054DB1CEAF73A0006A2F5 /* SliderView.swift in Sources */,
 				CF5054AF1CEAF7160006A2F5 /* ViewController.swift in Sources */,
 				CF5054AD1CEAF7160006A2F5 /* AppDelegate.swift in Sources */,
+				CF5054DF1CEC1F480006A2F5 /* SurveyMarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +494,7 @@
 				CF5054D31CEAF7160006A2F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5054D41CEAF7160006A2F5 /* Build configuration list for PBXNativeTarget "SurveySliderExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				CF5054D61CEAF7160006A2F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5054D71CEAF7160006A2F5 /* Build configuration list for PBXNativeTarget "SurveySliderExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				CF5054D91CEAF7160006A2F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
